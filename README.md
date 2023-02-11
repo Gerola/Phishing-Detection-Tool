@@ -1,2 +1,2 @@
-# Phishing Education Tool
+# Phishing Tool
 
