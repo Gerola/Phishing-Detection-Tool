@@ -1,3 +1,2 @@
-# 427-Project
+# Phishing Education Tool
 
-Filler....
