@@ -9,8 +9,12 @@ One of your employees clicks on an email they believe came from their bank. Next
 My approach for this project is to create a program that indicates to a user if a email/text is a phishing attempt or not based on features of the email/text that the user will provide.<br><br>
 I will program the tool in Python. The program will start, and an interface will pop up to make it user friendly. The initial statement on the interface would be "is this a text or email?". This is because there would be different things to look for in each. After the user selects one of the options the interface will walk the user through a sort of checklist of potential features of an email/text until they arrive at the end. When the user arrives at the end the program will display whether this is a phishing attempt or not based on machine learning and what the next steps should be for the individual if this is indeed a phishing attempt.<br><br>
 As stated I will use machine learning that will be trained from past phishing attempts both fake and real to classify new instances of possible phishing attempts. I will use different feature vectors and data for email and text messages since they will have different things to look for which was touched on briefly above.
-## Program & How to Run:
+## How to Run & Installing Modules:
 
+To get scikit-learn (Note: this also gets the NumPy module):<br>
+`pip3 install scikit-learn`<br><br>
+After all the modules are installed, successfully, run the following command in the directory with the files to start the program.<br>
+`python main.py`
 
 ## Data Sets:
 
