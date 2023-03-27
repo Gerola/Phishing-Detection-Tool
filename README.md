@@ -20,6 +20,7 @@ After all the modules are installed, successfully, run the following command in 
 
 
 ## Sources Used:
+### Feature Vectors and Examples:
  - Phishing.org "Phishing Examples" phishing.org, https://www.phishing.org/phishing-examples. Accessed 20 Feb 2023.
 <br><br>
  - Hook Security "Phishing Email Examples." hooksecurity.co, https://www.hooksecurity.co/phishing-email-examples. Accessed 15 Feb 2023.
@@ -27,3 +28,4 @@ After all the modules are installed, successfully, run the following command in 
  - Federal Trade Commission Consumer Advice "How to Recognize and Report Spam Text Messages." https://consumer.ftc.gov/articles/how-recognize-and-report-spam-text-messages. Accessed 18 Feb 2023.
 <br><br>
  - Verizon "Smishing \& spam text messages" https://www.verizon.com/about/account-security/smishing-and-spam-text-messages. Accessed 19 Feb 2023.
+### Machine Learning:
