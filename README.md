@@ -11,13 +11,10 @@ I will program the tool in Python. The program will start, and an interface will
 
 ## How to Run & Installing Modules:
 
-To get scikit-learn (Note: this also gets the NumPy module):<br>
+To get scikit-learn:<br>
 `pip3 install scikit-learn`<br><br>
-After all the modules are installed, successfully, run the following command in the directory with the files to start the program.<br>
+After the modules are installed, successfully, run the following command in the directory with the files to start the program.<br>
 `python main.py`
-
-## Data Sets:
-
 
 ## Sources Used:
 ### Feature Vectors and Examples:
