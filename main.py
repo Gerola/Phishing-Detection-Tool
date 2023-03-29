@@ -11,11 +11,7 @@ class Phishing_Tool():
     def __init__(self):
         Phish = Phishing_GUI() #holds the phishing GUIs
 
-
-
-
 Phishing_Tool()
-
 
 # Get all the data into the program and
 # start the machine learning aspect of the
