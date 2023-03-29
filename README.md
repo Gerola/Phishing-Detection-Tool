@@ -26,3 +26,7 @@ After the modules are installed, successfully, run the following command in the 
 <br><br>
  - Verizon "Smishing \& spam text messages" https://www.verizon.com/about/account-security/smishing-and-spam-text-messages. Accessed 19 Feb 2023.
 ### Machine Learning:
+ - https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+ - https://scikit-learn.org/stable/modules/tree.html
+
+
