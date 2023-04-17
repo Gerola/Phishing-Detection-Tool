@@ -1,7 +1,7 @@
 
 # Author Matthew Gerola
 # Assignment: CptS 427 Course Project 2023
-# Date: ?/?/2023
+# Date: 4/17/2023
 
 
 from sklearn.ensemble import RandomForestClassifier
@@ -16,8 +16,8 @@ class MachineLearn():
         self.emailValues = []
         
         #The Trees that will be used to diagnose a phishing attempt
-        self.emailTree = RandomForestClassifier(n_estimators = 12, max_depth = 3, random_state = 0)
-        self.textTree = RandomForestClassifier(n_estimators = 12, max_depth = 3, random_state = 0)
+        self.emailTree = RandomForestClassifier(n_estimators = 15, max_depth = 5, random_state = 0)
+        self.textTree = RandomForestClassifier(n_estimators = 15, max_depth = 5, random_state = 0)
 
         self.setup()
         self.train()

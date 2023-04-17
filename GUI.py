@@ -1,7 +1,7 @@
 
 # Author Matthew Gerola
 # Assignment: CptS 427 Course Project 2023
-# Date: ?/?/2023
+# Date: 4/17/2023
 
 import tkinter as tk
 import tkinter.messagebox
@@ -62,21 +62,17 @@ class Phishing_GUI():
         tk.Label(emailGUI,text="Was there a sense of urgency in the email?",background="#5EA9BE").grid(row=1,column=0,padx=40)
         tk.Checkbutton(emailGUI,variable = Now, onvalue=1,offvalue=0,height=1,width=2,background="#5EA9BE").grid(row=1,column=1)
         
-
-        tk.Label(emailGUI,text="Was this an order confirmation/verification?",background="#5EA9BE").grid(row=2,column=0)
+        tk.Label(emailGUI,text="Was this a confirmation/verification email?",background="#5EA9BE").grid(row=2,column=0)
         tk.Checkbutton(emailGUI,variable = Confirm, onvalue=1,offvalue=0,height=1,width=2,background="#5EA9BE").grid(row=2,column=1)
         
-        tk.Label(emailGUI,text="Was the company compromised or account compromised?",background="#5EA9BE").grid(row=3,column=0)
+        tk.Label(emailGUI,text="Was a company compromised or account compromised?",background="#5EA9BE").grid(row=3,column=0)
         tk.Checkbutton(emailGUI,variable = Compromise, onvalue=1,offvalue=0,height=1,width=2,background="#5EA9BE").grid(row=3,column=1)
 
-        
         tk.Label(emailGUI,text="Is there money involved?",background="#5EA9BE").grid(row=4,column=0)
         tk.Checkbutton(emailGUI,variable = Money, onvalue=1,offvalue=0,height=1,width=2,background="#5EA9BE").grid(row=4,column=1)
 
-        
         tk.Label(emailGUI,text="Is the email making it seem like the best option is to click the link provided?",background="#5EA9BE").grid(row=5,column=0)
         tk.Checkbutton(emailGUI,variable = Best_Interest, onvalue=1,offvalue=0,height=1,width=2,background="#5EA9BE").grid(row=5,column=1)
-
 
         tk.Label(emailGUI,text="Is this email from the correct company/person?",background="#5EA9BE").grid(row=6,column=0)
         tk.Checkbutton(emailGUI,variable = emailat, onvalue=1,offvalue=0,height=1,width=2,background="#5EA9BE").grid(row=6,column=1)
@@ -107,9 +103,9 @@ class Phishing_GUI():
         #       hopefully clear up any confusion
         moredetails = """
         Sense of Urgency: 
-                \tThis has many buzy words some include Urgent, Mandatory, Now. The sense of this needs to be done now is felt.\n
+                \tThis email has buzy words some include Urgent, Mandatory, Now. The sense of this needs to be done now is felt.\n
         Order/Verification: 
-                \tHyperlink to verify an account was made. Or an account was made and you need to click a link to verify.\n
+                \tHyperlink to verify an account was made. Or an order was placed and you were given the details.\n
         Compromised: 
                 \tAn Account was compromised and you need to take some type of action to ensure nothing bad happens. Either the company or a personal account.\n
         Money: 
@@ -117,21 +113,21 @@ class Phishing_GUI():
         Help a person out with a link provided: 
                 \tDoes this email make it seem like the sender is looking out for you and the best thing to do is click the link they provided for convience?\n
         Is the email from the person who sent it: 
-                \tDoes the @ match the company that sent the email some odd ones would be ....\n
-                \tIf does the person who sent it match the email?\n
+                \tDoes the @ match the company that sent the email if not then it can't be trusted.\n
+                \tDoes the person who sent it match the email?\n
         Mistakes: 
                 \tAny grammar/misspellings or information that is not correct?\n
         Too Good: 
-                \tA raffle and you won the grand prize or a gift card with a lot of money involved or catching a lucky break\n
+                \tA raffle and you won the grand prize or a gift card with a lot of money involved or catching a lucky break like a high paying job.\n
         FOMO: 
-                \tFOMO --> Fear of Missing Out. Does this email make you want to do whats in the email. Get a drink from a certain place, see what people are up to, \treconnect.\n
+                \tFOMO --> Fear of Missing Out. Does this email make you want to do whats in the email. Get a drink from a certain place, see what people are up to reconnect.\n
         Expecting: 
                 \tWere you expecting to receive and email similar to this one or did you trigger an event to create the email?\n
                 \tPerhaps you reset a password or signed in to an account from a different device.\n
         Was an Attachment included in the email: 
-                \tWas an attachment of any kind included in the email sent to you?\n
+                \tWas an attachment of any kind included in the email sent to you (PDF)?\n
         Informing: 
-                \tIs this email telling you an event was missed and to view the current state you can click on a link that you don't know about? \n
+                \tIs this email telling you an event was missed and to view the current state you can click on a link? \n
         Asking for Information: 
                 \tIs this email asking for more personal information and for it to be sent back for more details about something?\n
         """
@@ -173,17 +169,15 @@ class Phishing_GUI():
         tk.Label(textGUI,text="Was money involved in the text?",background="#5EA9BE").grid(row=1,column=0)
         tk.Checkbutton(textGUI,variable = money, onvalue=1,offvalue=0,height=1,width=2,background="#5EA9BE").grid(row=1,column=1)
         
-
         tk.Label(textGUI,text="Is this too good to be true?",background="#5EA9BE").grid(row=2,column=0)
         tk.Checkbutton(textGUI,variable = Too_Good, onvalue=1,offvalue=0,height=1,width=2,background="#5EA9BE").grid(row=2,column=1)
         
-        tk.Label(textGUI,text="Was the company compromised or account compromised?",background="#5EA9BE").grid(row=3,column=0)
+        tk.Label(textGUI,text="Was a company compromised or account compromised?",background="#5EA9BE").grid(row=3,column=0)
         tk.Checkbutton(textGUI,variable = accounttroubles, onvalue=1,offvalue=0,height=1,width=2,background="#5EA9BE").grid(row=3,column=1)
 
         tk.Label(textGUI,text="Is this email asking for more information regarding you?",background="#5EA9BE").grid(row=4,column=0)
         tk.Checkbutton(textGUI,variable = information, onvalue=1,offvalue=0,height=1,width=2,background="#5EA9BE").grid(row=4,column=1)
         
-
         tk.Label(textGUI,text="Does it seem like they want to start a conversation?",background="#5EA9BE").grid(row=5,column=0)
         tk.Checkbutton(textGUI,variable = conversation, onvalue=1,offvalue=0,height=1,width=2,background="#5EA9BE").grid(row=5,column=1)
         
@@ -193,17 +187,15 @@ class Phishing_GUI():
         tk.Label(textGUI,text="Could this text be given to someone else and it would have the same effect?",background="#5EA9BE").grid(row=7,column=0)
         tk.Checkbutton(textGUI,variable = Norel, onvalue=1,offvalue=0,height=1,width=2,background="#5EA9BE").grid(row=7,column=1)
         
-
         tk.Label(textGUI,text="Was a weird picture in the text?",background="#5EA9BE").grid(row=8,column=0)
         tk.Checkbutton(textGUI,variable = Pictures, onvalue=1,offvalue=0,height=1,width=2,background="#5EA9BE").grid(row=8,column=1)
         
         tk.Label(textGUI,text="Was poor grammar/spelling present in the text?",background="#5EA9BE").grid(row=9,column=0)
         tk.Checkbutton(textGUI,variable = poorgrammar, onvalue=1,offvalue=0,height=1,width=2,background="#5EA9BE").grid(row=9,column=1)
 
-        tk.Label(textGUI,text="Was there a use of buzz words to present urgency in the text?",background="#5EA9BE").grid(row=10,column=0)
+        tk.Label(textGUI,text="Was there a sense of urgency in the text?",background="#5EA9BE").grid(row=10,column=0)
         tk.Checkbutton(textGUI,variable = buzz, onvalue=1,offvalue=0,height=1,width=2,background="#5EA9BE").grid(row=10,column=1)
         
-
         tk.Label(textGUI,text="Does this text come from an odd number?",background="#5EA9BE").grid(row=11,column=0)
         tk.Checkbutton(textGUI,variable = oddnumber, onvalue=1,offvalue=0,height=1,width=2,background="#5EA9BE").grid(row=11,column=1)
         
@@ -217,13 +209,13 @@ class Phishing_GUI():
 
         moredetails = """
         Money:
-                \tDoes this email have money involved? Credit card debt needing to be paid or gift card given to you.\n
+                \tDoes this text have money involved? Credit card debt needing to be paid or gift card given to you.\n
         Too Good:
                 \tA raffle and you won the grand prize or a gift card with a lot of money involved or catching a lucky break\n
         Account Troubles:
                 \tAn Account was compromised and you need to take some type of action to ensure nothing bad happens. Either the company or a personal account.\n
         Information:
-                \tIs this email asking for more personal information?\n
+                \tIs this text asking for more personal information?\n
         Conversation:
                 \tDoes it seem like this person whats a conversation to start from the text?\n
         Link:
@@ -242,7 +234,7 @@ class Phishing_GUI():
                 \tDo you know the person who sent the message, perhaps you have already talked on this message thread?\n
 
         """
-
+        
         #The helping button and the continue button
         helping = tk.Button(textGUI,text="More Info", width=8,height=2,command=lambda: tk.messagebox.showinfo("--More information--", moredetails),font=("Times",11)).grid(row=15,column=1,pady=15)
         move_on = tk.Button(textGUI,text="Continue", width=8,height=2,command=lambda: self.resultsFromMachine([money.get(),Too_Good.get(),accounttroubles.get(),information.get(),conversation.get(),link.get(),Norel.get(),Pictures.get(),poorgrammar.get(),buzz.get(),oddnumber.get(),knowtheperson.get()],textGUI,"Text"),font=("Times",11)).grid(row=16,column=1)
@@ -296,12 +288,12 @@ class Phishing_GUI():
         #--------------Create the Phishing Positive GUI-------------
         root = tk.Tk()
         root.geometry("325x325")
-        root.configure(background="#E60026")
+        root.configure(background="#ff9194")
         root.title("Phishing-Positive")
-        tk.Label(root,text="From what the Machine Learning has done it would appear\n this is indeed a phishing attempt.\n ",font=("Times",10),background="#E60026").grid(row=0,column=0)
-        tk.Label(root,text="You should not click on any links that are provided \nand not download any attachements(if included).\n",font=("Times",10),background="#E60026").grid(row=1,column=0)
-        tk.Label(root,text="If email please report this email to the abuse email your \nbusiness/university uses and delete the email.\n",font=("Times",10),background="#E60026").grid(row=2,column=0)
-        tk.Label(root,text="If text please block and report this number \n built into your messaging app.\n",font=("Times",10),background="#E60026").grid(row=3,column=0)
+        tk.Label(root,text="From what the Machine Learning has done it would appear\n this is indeed a phishing attempt.\n ",font=("Times",10),background="#ff9194").grid(row=0,column=0)
+        tk.Label(root,text="You should not click on any links that are provided \nand not download any attachements(if included).\n",font=("Times",10),background="#ff9194").grid(row=1,column=0)
+        tk.Label(root,text="If email please report this email to the abuse email your \nbusiness/university uses and delete the email.\n",font=("Times",10),background="#ff9194").grid(row=2,column=0)
+        tk.Label(root,text="If text please block and report this number \n built into your messaging app.\n",font=("Times",10),background="#ff9194").grid(row=3,column=0)
         tk.Button(root,text="Restart", width=8,height=2,command=lambda: self.startofProgram(root) ,font=("Times",10)).grid(row=5,column=0,pady=15)#Restart the Program
         #-----------------------------------------------------------
         
@@ -315,8 +307,8 @@ class Phishing_GUI():
         root.title("Phishing-Negative")
         tk.Label(root,text="From what the Machine Learning has done it would appear\n this is NOT a phishing attempt.\n ",font=("Times",10),background="#86DC3D").grid(row=0,column=0)
         tk.Label(root,text="This may not be 100% though with the better \nphishing attempts each year.\n",font=("Times",10),background="#86DC3D").grid(row=1,column=0)
-        tk.Label(root,text="So if you are worried about an account or something,\n independently go to the site and see if everything is ok.\n",font=("Times",10),background="#86DC3D").grid(row=2,column=0)
-        tk.Label(root,text="Do Not Click on the link(s) provided unless\n you are 100% sure they are not malicious.\n",font=("Times",10),background="#86DC3D").grid(row=3,column=0)
+        tk.Label(root,text="So if you are worried about an account or something related,\n independently go to the service and see if everything is ok.\n",font=("Times",10),background="#86DC3D").grid(row=2,column=0)
+        tk.Label(root,text="Do Not Click on the link(s) or download anything provided \nunless you are 100% sure they are not malicious.\n",font=("Times",10),background="#86DC3D").grid(row=3,column=0)
         tk.Button(root,text="Restart", width=8,height=2,command=lambda: self.startofProgram(root) ,font=("Times",10)).grid(row=5,column=0,pady=15)#Restart the Program
         #------------------------------------------------------------
         
