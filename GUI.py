@@ -103,7 +103,7 @@ class Phishing_GUI():
         #       hopefully clear up any confusion
         moredetails = """
         Sense of Urgency: 
-                \tThis email has buzy words some include Urgent, Mandatory, Now. The sense of this needs to be done now is felt.\n
+                \tThis email has buzzword, some include Urgent, Mandatory, Now. The sense of this needs to be done now is felt.\n
         Order/Verification: 
                 \tHyperlink to verify an account was made. Or an order was placed and you were given the details.\n
         Compromised: 
@@ -111,7 +111,7 @@ class Phishing_GUI():
         Money: 
                 \tDoes this email have money involved? Credit card debt needing to be paid or gift card given to you, paid position offered?\n
         Help a person out with a link provided: 
-                \tDoes this email make it seem like the sender is looking out for you and the best thing to do is click the link they provided for convience?\n
+                \tDoes this email make it seem like the sender is looking out for you and the best thing to do is click the link they provided for convenience?\n
         Is the email from the person who sent it: 
                 \tDoes the @ match the company that sent the email if not then it can't be trusted.\n
                 \tDoes the person who sent it match the email?\n
@@ -120,7 +120,7 @@ class Phishing_GUI():
         Too Good: 
                 \tA raffle and you won the grand prize or a gift card with a lot of money involved or catching a lucky break like a high paying job.\n
         FOMO: 
-                \tFOMO --> Fear of Missing Out. Does this email make you want to do whats in the email. Get a drink from a certain place, see what people are up to reconnect.\n
+                \tFOMO --> Fear of Missing Out. Does this email make you want to do what's in the email? Get a drink from a certain place, see what people are up to reconnect.\n
         Expecting: 
                 \tWere you expecting to receive and email similar to this one or did you trigger an event to create the email?\n
                 \tPerhaps you reset a password or signed in to an account from a different device.\n
@@ -164,7 +164,7 @@ class Phishing_GUI():
         back = tk.Button(textGUI,text="Back", width=8,height=2,command=lambda: self.startofProgram(textGUI) ,font=("Times",11)).grid(row=15,column=0,pady=15)
         #The back button
 
-        #All the Checkboxes that the user will click on if the phishing text satisifies the given thing
+        #All the Checkboxes that the user will click on if the phishing text satisfies the given thing
         
         tk.Label(textGUI,text="Was money involved in the text?",background="#5EA9BE").grid(row=1,column=0)
         tk.Checkbutton(textGUI,variable = money, onvalue=1,offvalue=0,height=1,width=2,background="#5EA9BE").grid(row=1,column=1)
@@ -217,17 +217,17 @@ class Phishing_GUI():
         Information:
                 \tIs this text asking for more personal information?\n
         Conversation:
-                \tDoes it seem like this person whats a conversation to start from the text?\n
+                \tDoes it seem like this person wants a conversation to start from the text?\n
         Link:
                 \tWas a link provided, but weird looking?\n
         No relevance:
-               \tDoes this seem like anyone could have gotten the text. Not very personal, sorta like a template?\n
+               \tDoes this seem like anyone could have gotten the text? Not very personal, sorta like a template?\n
         Pictures:
                 \tWas a picture that was weird included in the text?\n
         Poor Grammar:
                 \tIs poor grammar/spelling included in the text?\n
         Urgency:
-                \tThis has many buzy words some include Urgent, Mandatory, Now. The sense of this needs to be done now is felt.\n
+                \tThis has many buzzwords, some include Urgent, Mandatory, Now. The sense of this needs to be done now is felt.\n
         Odd Number:
                 \tIs the number from a weird zip code a quick google search should help with this question\n
         Know the Person who sent the text:
