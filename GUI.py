@@ -71,7 +71,7 @@ class Phishing_GUI():
         tk.Label(emailGUI,text="Is there money involved?",background="#5EA9BE").grid(row=4,column=0)
         tk.Checkbutton(emailGUI,variable = Money, onvalue=1,offvalue=0,height=1,width=2,background="#5EA9BE").grid(row=4,column=1)
 
-        tk.Label(emailGUI,text="Is the email making it seem like the best option is to click the link provided?",background="#5EA9BE").grid(row=5,column=0)
+        tk.Label(emailGUI,text="Is the email making it seem like the best option is to click a link provided?",background="#5EA9BE").grid(row=5,column=0)
         tk.Checkbutton(emailGUI,variable = Best_Interest, onvalue=1,offvalue=0,height=1,width=2,background="#5EA9BE").grid(row=5,column=1)
 
         tk.Label(emailGUI,text="Is this email from the correct company/person?",background="#5EA9BE").grid(row=6,column=0)
